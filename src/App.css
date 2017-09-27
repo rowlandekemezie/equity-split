@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.input-field {
+  padding: 5px
+}
+
+.has-error {
+  color: #8A3B86 !important;
+  background-color: #fcf8e3 !important;
+  border-color: #FF4E09 !important;
+}
