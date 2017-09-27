@@ -45,8 +45,8 @@ class App extends Component {
       if(!localStorage.data) {
         localStorage['data'] = JSON.stringify(this.state.data);
       } else {
-			 console.log("%cApp will not remember data created as LocalStorage Is Not Available",
-							 "color: hotpink; background: #333; font-size: x-large;font-family: Courier;");
+       console.log("%cApp will not remember data created as LocalStorage Is Not Available", 
+       "color: hotpink; background: #333; font-size: x-large;font-family: Courier;");
       }
     }
   }
@@ -108,9 +108,7 @@ class App extends Component {
   }
 
   getTotalDays() {
-    return this.state.data.reduce((acc, {days}) => {
-      console.log(acc + days)
-      return acc + Number(days)}, 0)
+    return this.state.data.reduce((acc, {days}) => acc + days, 0);
   }
 
   getTotalInvestorCash() {
